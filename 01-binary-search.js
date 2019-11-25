@@ -13,6 +13,7 @@ const binarySearch = (list, item) => {
     if ( guess === item ) {
       return mid
     }
+    // Check if guess is too high or too low and adjust bounds
     if ( guess > item ) {
       high = mid - 1
     } else {
